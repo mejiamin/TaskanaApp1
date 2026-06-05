@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--base-black);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.headerRight {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.headerBtn {
+  width: 118px;
+  height: 40px;
+  color: var(--base-white);
+  background-color: var(--base-primary-400);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+.headerBtn:hover:enabled {
+  background-color: var(--base-primary-500);
+}
+
+.headerBtn:focus-visible {
+  background-color: var(--base-primary-500);
+  outline-color: var(--base-white);
+}
+
+.headerBtn:active:enabled {
+  background-color: var(--base-primary-300);
+}
+
+.headerLoading {
+  background-color: var(--base-primary-300);
+}
+
+.headerSpin {
+  color: var(--base-white);
+}

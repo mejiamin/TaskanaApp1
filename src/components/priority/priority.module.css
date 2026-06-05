@@ -1,0 +1,113 @@
+.priority {
+  width: 100%;
+  margin-bottom: 24px;
+  padding-inline: 24px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.priority .icons {
+  display: flex;
+  gap: 8px;
+}
+
+.priority .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.priority .minus {
+  color: var(--neutral-600);
+}
+
+.priority .chevronTop {
+  color: var(--secondary-400);
+}
+
+.priority .arrowTwo {
+  color: var(--primary-400);
+}
+
+.priority .icon:hover {
+  box-shadow: var(--sm-hover);
+}
+
+.priority .minus:hover {
+  background-color: var(--neutral-300);
+}
+
+.priority .chevronTop:hover {
+  background-color: var(--secondary-100);
+}
+
+.priority .arrowTwo:hover {
+  background-color: var(--primary-100);
+}
+
+.priority .icon:focus-visible {
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.priority .minus:focus-visible {
+  background-color: var(--neutral-300);
+}
+
+.priority .chevronTop:focus-visible {
+  background-color: var(--secondary-100);
+}
+
+.priority .arrowTwo:focus-visible {
+  background-color: var(--primary-100);
+}
+
+.priority .active {
+  box-shadow: 2px 2px 4px 0px #0000001A;
+}
+
+.priority .minus.active {
+  background-color: var(--neutral-200);
+}
+
+.priority .chevronTop.active {
+  background-color: var(--secondary-0);
+}
+
+.priority .arrowTwo.active {
+  background-color: var(--primary-0);
+}
+
+.priority .minus.active:hover {
+  background-color: var(--neutral-300);
+}
+
+.priority .chevronTop.active:hover {
+  background-color: var(--secondary-100);
+}
+
+.priority .arrowTwo.active:hover {
+  background-color: var(--primary-100);
+}
+
+.priority .minus.active:focus-visible {
+  background-color: var(--neutral-300);
+}
+
+.priority .chevronTop.active:focus-visible {
+  background-color: var(--secondary-100);
+}
+
+.priority .arrowTwo.active:focus-visible {
+  background-color: var(--primary-100);
+}

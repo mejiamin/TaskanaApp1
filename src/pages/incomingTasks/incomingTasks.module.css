@@ -1,0 +1,18 @@
+.incomingTasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.incomingTasks .title {
+  width: 100%;
+  max-width: 996px;
+  margin-inline: auto;
+  padding: 24px 24px 18px;
+  position: sticky;
+  top: 0;
+  background-color: var(--neutral-0);
+  z-index: 10;
+}

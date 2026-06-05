@@ -1,0 +1,210 @@
+.taskItems {
+  width: 100%;
+  max-width: 955px;
+  height: 100%;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style-type: none;
+}
+
+.taskItems .taskItem {
+  padding: 0;
+  margin: 0;
+}
+
+.taskItems .taskItem:last-child {
+  margin-bottom: 6px;
+}
+
+.taskItems .label {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  gap: 18px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.taskItems .label:hover {
+  background: var(--neutral-100);
+  box-shadow: var(--sm-default)
+}
+
+.taskItems .taskItem.editing {
+  background: var(--neutral-100);
+  box-shadow: var(--sm-default);
+  border-radius: 8px;
+}
+
+.taskItems .label:focus-visible {
+  background: var(--neutral-100);
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.taskItems span {
+  min-width: 500px;
+  margin-right: 40px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.taskItems .checkbox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+}
+
+.taskItems .checkbox[type=checkbox]:before {
+  content: "";
+  color: transparent !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-top: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Editor Button */
+
+.taskItems .editorBtn {
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  padding-left: 7px;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: var(--neutral-600);
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.taskItems .taskItem.editing .editorBtn {
+  opacity: 1;
+}
+
+.taskItems .taskItem.editing .editorBtn:focus-visible {
+  color: var(--neutral-800) !important;
+  background-color: var(--neutral-300) !important;
+}
+
+.taskItems .label:hover .editorBtn {
+  opacity: 1;
+}
+
+.taskItems .editorBtn:focus-visible {
+  opacity: 1;
+  margin-left: 6px;
+  color: var(--neutral-800);
+  background-color: var(--neutral-300);
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.taskItems .editorBtn:hover:enabled {
+  color: var(--neutral-800);
+  background-color: var(--neutral-300);
+}
+
+.taskItems .editorBtn:active:enabled {
+  color: var(--neutral-600);
+  background-color: var(--neutral-100);
+  box-shadow: none;
+}
+
+.taskItems .editorBtn:disabled {
+  opacity: var(--opacity-disable) !important;
+}
+
+.taskItems .editorLoading {
+  background-color: var(--neutral-200);
+}
+
+.taskItems .editorSpin {
+  margin-left: -8px;
+  color: var(--neutral-600);
+}
+
+/* ------------------------------------------------- */
+
+.taskItems .checkbox.priority-1[type=checkbox]:before {
+  border: 1.5px solid var(--neutral-400);
+
+}
+
+.taskItems .checkbox.priority-1[type=checkbox]:hover::before {
+  border: 1.5px solid var(--neutral-800);
+}
+
+.taskItems .checkbox.priority-1[type=checkbox]:focus-visible::before {
+  border: 1.5px solid var(--neutral-800);
+  outline: 4px solid var(--neutral-400);
+}
+
+.taskItems .checkbox.priority-1[type=checkbox]:checked:before {
+  background: var(--neutral-400);
+}
+
+/* ------------------------------------------------- */
+
+.taskItems .checkbox.priority-2[type=checkbox]:before {
+  border: 1.5px solid var(--secondary-300);
+
+}
+
+.taskItems .checkbox.priority-2[type=checkbox]:hover::before {
+  border: 1.5px solid var(--secondary-500);
+}
+
+.taskItems .checkbox.priority-2[type=checkbox]:focus-visible::before {
+  border: 1.5px solid var(--secondary-500);
+  outline: 4px solid var(--secondary-100);
+}
+
+.taskItems .checkbox.priority-2[type=checkbox]:checked:before {
+  background: var(--secondary-300);
+}
+
+/* ------------------------------------------------- */
+
+.taskItems .checkbox.priority-3[type=checkbox]:before {
+  border: 1.5px solid var(--primary-300);
+
+}
+
+.taskItems .checkbox.priority-3[type=checkbox]:hover::before {
+  border: 1.5px solid var(--primary-500);
+}
+
+.taskItems .checkbox.priority-3[type=checkbox]:focus-visible::before {
+  border: 1.5px solid var(--primary-500);
+  outline: 4px solid var(--primary-100);
+}
+
+.taskItems .checkbox.priority-3[type=checkbox]:checked:before {
+  background: var(--primary-300);
+}
+
+/* ------------------------------------------------- */
+
+@media (min-width: 1601px) {
+  .taskItems .checkbox[type=checkbox]:before {
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,99 @@
+.themeSwitcher {
+  position: relative;
+  width: 76px;
+  height: 40px;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--base-800);
+  box-shadow: 2px 2px 4px 0px var(--base-default);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: outline 0.2s ease;
+}
+
+.label .sun {
+  transition: color 0.2s ease;
+  z-index: 10;
+}
+
+.label .moon {
+  color: var(--base-600);
+  z-index: 10;
+}
+
+.thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: var(--base-primary-400);
+  box-shadow: 2px 2px 4px 0px #00000080;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.label:hover .thumb {
+  background-color: var(--base-white);
+}
+
+label:hover .sun {
+  color: var(--base-900);
+}
+
+.input:checked+.label .thumb {
+  transform: translateX(36px);
+  color: var(--base-white);
+}
+
+.input:checked+.label .sun {
+  color: var(--base-600);
+}
+
+.input:checked+.label .moon {
+  color: var(--base-white);
+  transition: color 0.2s ease;
+}
+
+.input:checked+.label:hover .moon {
+  color: var(--base-900);
+}
+
+.input+.label {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.input:focus-visible+.label {
+  outline-color: var(--base-white);
+}
+
+.input:focus-visible+.label .thumb {
+  background-color: var(--base-white);
+}
+
+.input:focus-visible+.label .sun {
+  color: var(--base-900);
+}
+
+.input:checked:focus-visible+.label .sun {
+  color: var(--base-600);
+}
+
+.input:checked:focus-visible+.label .moon {
+  color: var(--base-900);
+}

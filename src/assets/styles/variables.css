@@ -1,0 +1,97 @@
+:root {
+  --neutral-0: #FFFFFF;
+  --neutral-100: #FBFBFB;
+  --neutral-200: #F3F3F3;
+  --neutral-300: #ECECEC;
+  --neutral-400: #BFBFBF;
+  --neutral-500: #8C8C8C;
+  --neutral-600: #6C6C6C;
+  --neutral-700: #393939;
+  --neutral-800: #1C1C1C;
+  --neutral-900: #141414;
+
+  --primary-0: #FFF4F4;
+  --primary-100: #FFCECE;
+  --primary-200: #FCA9A9;
+  --primary-300: #F25959;
+  --primary-400: #D51010;
+  --primary-500: #A60C0C;
+  --primary-600: #760909;
+
+  --base-primary-100: #FFCECE;
+  --base-primary-300: #F25959;
+  --base-primary-400: #D51010;
+  --base-primary-500: #A60C0C;
+  --base-primary-400-500: linear-gradient(180deg, #D51010 0%, #A60C0C 100%);
+
+  --base-white: #FFFFFF;
+  --base-600: #6C6C6C;
+  --base-800: #262626;
+  --base-900: #141414;
+  --base-black: #000000;
+
+  --secondary-0: #F5F0FF;
+  --secondary-100: #EADFFF;
+  --secondary-200: #D9C5FF;
+  --secondary-300: #B792FF;
+  --secondary-400: #742CFF;
+  --secondary-500: #581BCC;
+
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+
+  --font-size-32: 32px;
+  --font-size-24: 24px;
+  --font-size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+
+  --line-height-40: 40px;
+  --line-height-32: 32px;
+  --line-height-24: 24px;
+  --line-height-20: 20px;
+
+  --base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  --base-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.25);
+  --sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --sm-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.2);
+  --lg-default: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+
+  --opacity-disable: 0.5;
+}
+
+[data-theme="dark"] {
+  --neutral-0: #141414;
+  --neutral-100: #1C1C1C;
+  --neutral-200: #262626;
+  --neutral-300: #333333;
+  --neutral-400: #6C6C6C;
+  --neutral-500: #8C8C8C;
+  --neutral-600: #BFBFBF;
+  --neutral-700: #ECECEC;
+  --neutral-800: #FBFBFB;
+  --neutral-900: #FFFFFF;
+
+  --primary-0: #300B0B;
+  --primary-100: #461313;
+  --primary-200: #760909;
+  --primary-300: #A60C0C;
+  --primary-400: #D51010;
+  --primary-500: #F25959;
+
+  --secondary-0: #261C3C;
+  --secondary-100: #3D2A66;
+  --secondary-200: #5D38AE;
+  --secondary-300: #7D45EA;
+  --secondary-400: #9D6AFF;
+  --secondary-500: #B792FF;
+
+  --base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  --base-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.8);
+  --sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --sm-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.6);
+  --lg-default: 0px 0px 16px 8px rgba(0, 0, 0, 0.4);
+
+  --opacity-disable: 0.3;
+}

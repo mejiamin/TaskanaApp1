@@ -1,0 +1,14 @@
+.logo {
+  width: 126px;
+  height: 40px;
+  margin-block: 12px;
+  margin-left: 16px;
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: 6px;
+  transition: outline 0.2s ease;
+}
+
+.logo:focus-visible {
+  outline-color: var(--base-white);
+}

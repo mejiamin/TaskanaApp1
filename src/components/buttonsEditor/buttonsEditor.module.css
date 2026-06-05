@@ -1,0 +1,149 @@
+.buttons {
+  position: relative;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+  padding: 16px 24px 16px 24px;
+  background-color: var(--neutral-100);
+  border-top: 1px solid var(--neutral-300);
+  transition: all 0.2s ease;
+}
+
+.createBtn,
+.cancelBtn {
+  font-family: "Source Sans 3";
+  height: 48px;
+  padding-left: 16px;
+  transition: all 0.2s ease;
+}
+
+/* Create Button */
+
+.createBtn {
+  width: 98px;
+  color: var(--neutral-0);
+  background-color: var(--neutral-800);
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+}
+
+.saveBtn {
+  width: 119px;
+}
+
+.createBtn:hover:enabled {
+  background-color: var(--neutral-700);
+}
+
+.createBtn:focus-visible {
+  background-color: var(--neutral-700);
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.createBtn:active:enabled {
+  background-color: var(--neutral-600);
+  box-shadow: none;
+}
+
+.createBtn:disabled {
+  opacity: var(--opacity-disable);
+}
+
+.createLoading {
+  background-color: var(--neutral-600);
+}
+
+.createSpin {
+  color: var(--neutral-0);
+}
+
+/* Cancel Button */
+
+.cancelBtn {
+  width: 94px;
+  color: var(--neutral-800);
+  background-color: var(--neutral-200);
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+}
+
+.cancelBtn:hover:enabled {
+  background-color: var(--neutral-300);
+}
+
+.cancelBtn:focus-visible {
+  background-color: var(--neutral-300);
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.cancelBtn:active:enabled {
+  background-color: var(--neutral-200);
+  box-shadow: none;
+}
+
+.cancelBtn:disabled {
+  opacity: var(--opacity-disable);
+}
+
+.cancelLoading {
+  background-color: var(--neutral-200);
+}
+
+.cancelSpin {
+  color: var(--neutral-800);
+}
+
+/* Trash Button */
+
+.trashBtn {
+  width: 48px;
+  height: 48px;
+  padding-left: 10px;
+  position: absolute;
+  top: 16px;
+  right: 23px;
+  color: var(--primary-400);
+  background-color: var(--neutral-200);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: all 0.2s ease, color 0s;
+}
+
+.trashBtn:focus-visible {
+  padding-left: 10px;
+  color: var(--neutral-0);
+  background-color: var(--primary-400);
+  border-color: var(--neutral-0);
+  outline-color: var(--neutral-900);
+}
+
+.trashBtn:hover:enabled {
+  color: var(--neutral-0);
+  background-color: var(--primary-400);
+}
+
+.trashBtn:active:enabled {
+  color: var(--neutral-0);
+  background-color: var(--primary-300);
+  box-shadow: none;
+}
+
+.trashBtn:disabled {
+  opacity: var(--opacity-disable);
+}
+
+.trashLoading {
+  background-color: var(--primary-300);
+}
+
+.trashSpin {
+  margin-left: -12px;
+  color: var(--neutral-0);
+}

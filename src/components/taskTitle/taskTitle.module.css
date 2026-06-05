@@ -1,0 +1,70 @@
+.taskTitle {
+  margin-bottom: 7px;
+  padding-inline: 24px;
+  position: sticky;
+  top: 88px;
+  background-color: var(--neutral-100);
+}
+
+.taskTitle label {
+  cursor: pointer;
+}
+
+.taskTitle .star {
+  color: var(--primary-400);
+}
+
+.taskTitle input {
+  width: 100%;
+  margin-top: 11px;
+  margin-bottom: 18px;
+  padding: 15px 56px 14px 15px;
+  font-family: "Source Sans 3";
+  color: var(--neutral-800);
+  background-color: var(--neutral-100);
+  border-radius: 8px;
+  border: 1px solid var(--neutral-400);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: all 0.2s ease, margin 0s, padding 0s;
+}
+
+.taskTitle input:hover {
+  border: 1px solid var(--neutral-600);
+}
+
+.taskTitle input:focus-visible {
+  border: none;
+  outline-color: var(--neutral-800);
+  margin-top: 11px;
+  margin-bottom: 18px;
+  padding: 16px 45px 15px 16px;
+}
+
+.taskTitle .clearButton {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 48px;
+  right: 32px;
+  color: var(--neutral-500);
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: all 0.2s ease-out;
+}
+
+.taskTitle .clearButton:hover {
+  color: var(--neutral-800);
+}
+
+.taskTitle .clearButton:focus-visible {
+  outline-color: var(--neutral-800);
+  color: var(--neutral-800);
+}

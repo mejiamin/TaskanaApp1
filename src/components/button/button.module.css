@@ -1,0 +1,53 @@
+.button {
+  padding-left: 12px;
+  position: relative;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Source Sans 3';
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.headerBtn:active:enabled {
+  box-shadow: none !important;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button:hover:disabled {
+  box-shadow: none;
+}
+
+.loading {
+  opacity: 1 !important;
+}
+
+.loadingIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.loading .loadingIcon {
+  opacity: 1;
+}
+
+.spin {
+  margin-left: -17px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
