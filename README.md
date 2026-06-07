@@ -4,7 +4,7 @@
 
 Автор: **Магомед-Амин** — @mejiamin
 
-Демо: [mejiamin.github.io/TaskanaApp1/](https://mejiamin.github.io/TaskanaApp1/)
+Демо: [Открыть проект](https://mejiamin.github.io/TaskanaApp1/)
 
 ## Технологии
 
